@@ -5,7 +5,6 @@ calculating clpsiphi term for Eq. 4.8/4.9
 @author: nessa
 """
 
-from lab import *
 from mpi4py import MPI
 import sys
 import pickle
@@ -15,6 +14,8 @@ import pickle
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
+
+from lab import *
 
 paramfile = sys.argv[1]
 params = pickle.load(open(paramfile,'rb'))
@@ -46,7 +47,6 @@ else:
     kernel1 = gal_clus(Gauss_redshift(sigma_z=sigma_z_1,z0=z0_1), bias_func)
     kernel2 = gal_clus(Gauss_redshift(sigma_z=sigma_z_2,z0=z0_2), bias_func)
 
-kernel=kernel1
 
 r2d, t2d = np.meshgrid(t_,t_)
 
@@ -77,8 +77,8 @@ for jj_, jj in enumerate(jjs):
     chi1fac0 = D_chi(chi)*(1.+z_chi(chi))
     chi1fac0 = chi1fac0 *(chi)**(1.-(n+nu_n_.reshape(1,-1)))
     #gal
-    chi2fac00 = (kernel(t2*chi)*D_chi(t2*chi))
-    chi2fac01 = (kernel(1./t2*chi)*D_chi(1./t2*chi))
+    chi2fac00 = (kernel1(t2*chi)*D_chi(t2*chi))
+    chi2fac01 = (kernel1(1./t2*chi)*D_chi(1./t2*chi))
     chi2fac01 = chi2fac01 * t2**(n+nu_n_.reshape(1, -1)-2)
     chi2fac0  = chi2fac00 + chi2fac01
 
