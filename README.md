@@ -13,7 +13,7 @@ The computation of correlations (Cls) between quantities at different redshift (
 
 
 ## Contributors
-Chirag Modi(@modichirag), Emanuele Castorina
+Chirag Modi, Emanuele Castorina
 
 ## Requirements
 - Python>=3
