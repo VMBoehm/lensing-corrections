@@ -1,7 +1,7 @@
 # Lensing corrections on galaxy-lensing cross correlations and galaxy-galaxy auto correlations 
 
 ## Description
-Scripts and notebooks to compute higher order lensing corrections following (todo: link to publication)
+Scripts and notebooks to compute higher order lensing corrections following http://arxiv.org/abs/1910.06722
 
 To compute corrections to cross correlations between lensing convergence (at arbitrary source redshifts) and galaxy counts (LSST-like or Gaussian redhsift distribution) run and follow instructions in
 - CrossCorrelationResults.ipynb
