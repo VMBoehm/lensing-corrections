@@ -23,7 +23,7 @@ To compute corrections for correlations between galaxy counts (same or different
 
 An example output:  
 
-![lensing_corrections](/plots/gaussgal_z10_sigma4_cmblens_simple_bias_zmax10886/4paper/postbornterms_gaussgal_z10_sigma4_cmblens_simple_bias_zmax10886.png)
+![lensing_corrections](/plots/example4readme.png)
 
 The computation of correlations (Cls) between quantities at different redshift (without Limber approximation) is based on the FFTlog formalism ([Assassi et al. 2017](https://arxiv.org/pdf/1705.05022.pdf)). We provide the tabulated outputs of the required decomposition in the data folder (for a fiducial cosmology). The parameter values can be found in cosmo_dict.json.
 
