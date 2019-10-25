@@ -19,6 +19,12 @@ Chirag Modi, Emanuele Castorina
 - Python>=3
 - Numpy
 - Scipy
+- Mpi4py  
+
+for creating a conda environment:  
+```
+conda env create -f postborn_conda.yml
+```
 
 ## Comments
 are welcome :)
