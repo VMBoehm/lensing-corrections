@@ -21,7 +21,7 @@ To compute corrections to cross correlations between lensing convergence (at arb
 To compute corrections for correlations between galaxy counts (same or different redshift distribution) run and follow instructions in
 - AutoCorrelationResults.ipynb
 
-An example output:  
+As an example output, these are the correction terms on the cross correlation between the CMB lensing convergence and a galaxy sample with Gaussian redshift distribution:
 
 ![lensing_corrections](/plots/example4readme.png)
 
