@@ -1,8 +1,17 @@
-# Lensing corrections on galaxy-lensing cross correlations and galaxy-galaxy auto correlations 
+# Lensing corrections on galaxy-lensing cross correlations and galaxy-galaxy correlations 
 
-## Description
 Scripts and notebooks to compute higher order lensing corrections following http://arxiv.org/abs/1910.06722
 
+## Description
+One usually assumes that lensed fields can be modeled in the Born approximation, i.e. that one can ignore multiple deflections and simply add all lenses along the line of sight to get an accurate estimate of the lensing effect on an observed object.
+
+In this repository, we provide code to estimate the size of the lowest order correction terms to this approximation focusing on two observables:
+- cross correlations between galaxies and lensing (for arbitrary galaxy redshift distributions and lensing source redshifts)
+- correlations between galaxy samples (for arbitrary redshift distributions)
+
+If you are an observer and want to check if you can safely ignore these higher order corrections for your data analysis, you can use the provided notebooks to estimate their size for your specific configuration.
+
+## Usage
 To compute corrections to cross correlations between lensing convergence (at arbitrary source redshifts) and galaxy counts (LSST-like or Gaussian redhsift distribution) run and follow instructions in
 - CrossCorrelationResults.ipynb
 
